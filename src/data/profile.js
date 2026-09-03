@@ -4,8 +4,8 @@ export const profile = {
   subtitle: "Problem Solver building practical mobile experiences",
   location: "Bhavnagar, Gujarat",
   email: "sagarsoneji999@gmail.com",
-  linkedin: "https://linkedin.com/in/sagarsoneji",
-  github: "https://github.com/sagarsoneji",
+  linkedin: "https://www.linkedin.com/in/sagar-soneji-41b985378",
+  github: "https://github.com/sonejisagar",
   summary:
     "MCA graduate and Android Developer with internship experience building real-world products. I enjoy turning practical challenges into reliable mobile solutions.",
   introTerminal: [
@@ -49,6 +49,20 @@ export const projects = [
       "Published to Google Play Store (v1.0.7)",
     ],
     playStore: "https://play.google.com/store/apps/details?id=com.sagarsoneji.doc2contact",
+  },
+  {
+    title: "LinkPulse - URL Analytics Platform",
+    stack: ["Flutter", "Dart", "Firebase", "Cloud Functions", "AdMob"],
+    description:
+      "Built a mobile app that lets users create short links and track every click with a real-time analytics dashboard — complete with authentication, freemium limits, and ad-based unlocking.",
+    highlights: [
+      "Real-time click tracking and analytics dashboard with charts",
+      "Firebase Authentication — Email/Password, Google Sign-In, Email verification",
+      "Freemium model: 3 links, 100 clicks free — watch ads to unlock more",
+      "QR code generation, link sharing, and CSV/PDF export",
+      "Firebase Cloud Functions backend for secure link resolution",
+      "Onboarding tutorial with animated splash screen",
+    ],
   },
   {
     title: "CollexaHub - College Event Management App",
