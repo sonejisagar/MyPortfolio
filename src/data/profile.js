@@ -18,11 +18,11 @@ export const profile = {
 export const skills = [
   {
     group: "Mobile Development",
-    items: ["Java", "Android Studio", "Kotlin (Basic)", "REST APIs"],
+    items: ["Flutter", "Dart", "Java", "Android Studio", "Kotlin (Basic)", "REST APIs"],
   },
   {
     group: "Cloud & Backend",
-    items: ["Firebase Firestore", "Firebase Cloud Messaging (FCM)", "MySQL"],
+    items: ["Firebase Firestore", "Firebase Cloud Messaging (FCM)", "Google Cloud", "Cloudflare Workers", "MySQL"],
   },
   {
     group: "Web & Other",
@@ -30,11 +30,26 @@ export const skills = [
   },
   {
     group: "Tools",
-    items: ["Git", "GitHub", "VS Code", "Visual Studio"],
+    items: ["Git", "GitHub", "VS Code", "Visual Studio", "Google Play Console"],
   },
 ];
 
 export const projects = [
+  {
+    title: "Doc2Contact - AI Document to Contacts App",
+    stack: ["Flutter", "Dart", "Gemini AI", "Google Cloud", "AdMob", "Google Play"],
+    description:
+      "Built and published a production Flutter app on Google Play Store that uses Gemini AI to extract contact details (names & phone numbers) from photos, scanned documents, PDFs, Excel, and Word files — and saves them directly to the phone's contacts with a single tap.",
+    highlights: [
+      "Gemini AI-powered OCR pipeline via Cloudflare Workers proxy",
+      "Supports PDF, JPG, PNG, Excel, and Word document formats",
+      "Dark/Light theme with persistent user preference",
+      "AdMob banner and rewarded ads with in-app purchase premium upgrade",
+      "Smart duplicate detection before saving contacts",
+      "Published to Google Play Store (v1.0.7)",
+    ],
+    playStore: "https://play.google.com/store/apps/details?id=com.sagarsoneji.doc2contact",
+  },
   {
     title: "CollexaHub - College Event Management App",
     stack: ["Java", "Android Studio", "Firebase", "FCM"],
