@@ -31,6 +31,21 @@ function Projects({ projects }) {
                 <li key={point}>{point}</li>
               ))}
             </ul>
+            {project.playStore && (
+              <div className="mt-5 pt-4 border-t border-slate-100 dark:border-slate-700/60">
+                <a
+                  href={project.playStore}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 rounded-lg bg-emerald-600 px-3.5 py-1.5 text-xs font-semibold text-white shadow-sm transition hover:bg-emerald-700 hover:shadow"
+                >
+                  <svg className="h-4 w-4" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M3.609 1.814L13.792 12 3.61 22.186a2.43 2.43 0 0 1-.61-1.636V3.45a2.43 2.43 0 0 1 .61-1.636zm11.602 11.602l2.368 2.369-12.012 6.94 9.644-9.309zm0-2.832L5.567 1.275l12.012 6.94-2.368 2.369zm1.419 1.416l3.208 1.854a1.624 1.624 0 0 1 0 2.292l-3.208 1.854-2.148-2.148 2.148-1.852z" />
+                  </svg>
+                  Get on Google Play
+                </a>
+              </div>
+            )}
           </article>
         ))}
       </div>
