@@ -21,6 +21,10 @@ export const skills = [
     items: ["Flutter", "Dart", "Java", "Android Studio", "Kotlin (Basic)", "REST APIs"],
   },
   {
+    group: "AI Tools & Agents",
+    items: ["Antigravity", "Claude", "Cursor", "GitHub Copilot", "Gemini CLI", "AI Agent Workflows"],
+  },
+  {
     group: "Cloud & Backend",
     items: ["Firebase Firestore", "Firebase Cloud Messaging (FCM)", "Google Cloud", "Cloudflare Workers", "MySQL"],
   },
@@ -51,18 +55,19 @@ export const projects = [
     playStore: "https://play.google.com/store/apps/details?id=com.sagarsoneji.doc2contact",
   },
   {
-    title: "LinkPulse - URL Analytics Platform",
-    stack: ["Flutter", "Dart", "Firebase", "Cloud Functions", "AdMob"],
+    title: "LinkPulse - Smart Links & Bio Pages",
+    stack: ["Flutter", "Dart", "Firebase", "Cloudflare Workers", "Google Play"],
     description:
-      "Built a mobile app that lets users create short links and track every click with a real-time analytics dashboard — complete with authentication, freemium limits, and ad-based unlocking.",
+      "Built and published a production Flutter app on Google Play Store featuring creator Link-in-Bio profiles, smart URL shortening with custom aliases, high-resolution QR code studio, and real-time click analytics — completely 100% ad-free with a modern Electric Violet aesthetic.",
     highlights: [
-      "Real-time click tracking and analytics dashboard with charts",
-      "Firebase Authentication — Email/Password, Google Sign-In, Email verification",
-      "Freemium model: 3 links, 100 clicks free — watch ads to unlock more",
-      "QR code generation, link sharing, and CSV/PDF export",
-      "Firebase Cloud Functions backend for secure link resolution",
-      "Onboarding tutorial with animated splash screen",
+      "Creator Link-in-Bio: Claim custom @username profiles, unify social & portfolio links with customizable glassmorphic themes",
+      "Smart URL Shortener: Instant link shortener with custom alias support and fast clipboard sharing",
+      "High-Resolution QR Code Studio: Generate, customize, and export high-res QR codes for any link or bio page",
+      "Real-Time Click Analytics: Detailed metrics dashboard tracking clicks, devices, referrers, and geographic trends",
+      "100% Ad-Free Experience: Clean, distraction-free productivity without intrusive ads or paywalls",
+      "Published on Google Play Store with Cloudflare Workers proxy and Firebase integration",
     ],
+    playStore: "https://play.google.com/store/apps/details?id=com.sagarsoneji.linkpulse&pcampaignid=web_share",
   },
   {
     title: "CollexaHub - College Event Management App",
