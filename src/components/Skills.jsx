@@ -6,7 +6,7 @@ function Skills({ skills }) {
       <SectionTitle
         eyebrow="Skills"
         title="Tools and technologies I work with"
-        description="A balanced skill set across Android, backend services, and practical product development."
+        description="A modern skill set across Flutter, Android, AI integration, backend services, and mobile UX."
       />
       <div className="grid gap-4 sm:grid-cols-2">
         {skills.map((group) => (

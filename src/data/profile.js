@@ -1,28 +1,28 @@
 export const profile = {
   name: "Sagar Soneji",
-  title: "Android Developer",
-  subtitle: "Problem Solver building practical mobile experiences",
+  title: "Flutter & Android Developer",
+  subtitle: "Building production mobile apps with Flutter, native Android & modern AI workflows",
   location: "Bhavnagar, Gujarat",
   email: "sagarsoneji999@gmail.com",
   linkedin: "https://www.linkedin.com/in/sagar-soneji-41b985378",
   github: "https://github.com/sonejisagar",
   summary:
-    "MCA graduate and Android Developer with internship experience building real-world products. I enjoy turning practical challenges into reliable mobile solutions.",
+    "MCA graduate and Mobile Developer (Flutter & Android) with live production apps on Google Play Store. I specialize in building fast, scalable mobile apps with Flutter, native Android, and Gemini AI integration.",
   introTerminal: [
-    "> role: Android Developer",
-    "> mindset: Problem Solver",
-    "> focus: Java, Firebase, Mobile UX",
+    "> role: Flutter & Android Developer",
+    "> mindset: Product Engineer & Problem Solver",
+    "> focus: Flutter, Dart, Android, Gemini AI",
   ],
 };
 
 export const skills = [
   {
     group: "Mobile Development",
-    items: ["Flutter", "Dart", "Java", "Android Studio", "Kotlin (Basic)", "REST APIs"],
+    items: ["Flutter", "Dart", "Android (Java)", "Android Studio", "Kotlin (Basic)", "REST APIs"],
   },
   {
     group: "AI Tools & Agents",
-    items: ["Antigravity", "Claude", "Cursor", "GitHub Copilot", "Gemini CLI", "AI Agent Workflows"],
+    items: ["Antigravity", "Gemini API", "Claude", "Cursor", "GitHub Copilot", "AI Agent Workflows"],
   },
   {
     group: "Cloud & Backend",
@@ -33,8 +33,8 @@ export const skills = [
     items: ["PHP", "HTML", "CSS", "JavaScript", "Unity", "C#"],
   },
   {
-    group: "Tools",
-    items: ["Git", "GitHub", "VS Code", "Visual Studio", "Google Play Console"],
+    group: "Tools & Deployment",
+    items: ["Git", "GitHub", "Google Play Console", "AdMob", "VS Code", "Android Studio"],
   },
 ];
 
@@ -45,12 +45,11 @@ export const projects = [
     description:
       "Built and published a production Flutter app on Google Play Store that uses Gemini AI to extract contact details (names & phone numbers) from photos, scanned documents, PDFs, Excel, and Word files — and saves them directly to the phone's contacts with a single tap.",
     highlights: [
-      "Gemini AI-powered OCR pipeline via Cloudflare Workers proxy",
-      "Supports PDF, JPG, PNG, Excel, and Word document formats",
-      "Dark/Light theme with persistent user preference",
-      "AdMob banner and rewarded ads with bonus scan rewards",
-      "Smart duplicate detection before saving contacts",
-      "Published on Google Play Store",
+      "Published on Google Play Store with active users & zero-crash production release architecture",
+      "Sub-second AI OCR response times via Cloudflare Workers edge proxy & Gemini 1.5 Flash",
+      "Multi-format document intelligence engine supporting PDF, Excel (.xlsx), Word (.docx), and high-res images",
+      "Full productivity workflow: 1-Tap phonebook save, duplicate contact detection, and CSV / Excel / PDF exports",
+      "Integrated Google AdMob banner, app open, interstitial, and rewarded video ads with scan bonuses",
     ],
     playStore: "https://play.google.com/store/apps/details?id=com.sagarsoneji.doc2contact",
   },
@@ -60,12 +59,11 @@ export const projects = [
     description:
       "Built and published a production Flutter app on Google Play Store featuring creator Link-in-Bio profiles, smart URL shortening with custom aliases, high-resolution QR code studio, and real-time click analytics — completely 100% ad-free with a modern Electric Violet aesthetic.",
     highlights: [
-      "Creator Link-in-Bio: Claim custom @username profiles, unify social & portfolio links with customizable glassmorphic themes",
-      "Smart URL Shortener: Instant link shortener with custom alias support and fast clipboard sharing",
-      "High-Resolution QR Code Studio: Generate, customize, and export high-res QR codes for any link or bio page",
-      "Real-Time Click Analytics: Detailed metrics dashboard tracking clicks, devices, referrers, and geographic trends",
-      "100% Ad-Free Experience: Clean, distraction-free productivity without intrusive ads or paywalls",
-      "Published on Google Play Store with Cloudflare Workers proxy and Firebase integration",
+      "Published on Google Play Store with 100% ad-free, distraction-free productivity",
+      "Creator Link-in-Bio: Claim custom @username profiles with customizable glassmorphic themes",
+      "Smart URL Shortener & QR Studio: Custom alias links with sub-second redirect & high-res QR code export",
+      "Real-time click analytics dashboard tracking visits, referring devices, platforms, and locations",
+      "Scalable backend architecture with Flutter, Firebase Firestore, and Cloudflare Workers proxy",
     ],
     playStore: "https://play.google.com/store/apps/details?id=com.sagarsoneji.linkpulse&pcampaignid=web_share",
   },
@@ -73,12 +71,12 @@ export const projects = [
     title: "CollexaHub - College Event Management App",
     stack: ["Java", "Android Studio", "Firebase", "FCM"],
     description:
-      "Built an end-to-end Android application for creating and managing college events, with registration support for both individual and team participation.",
+      "Built an end-to-end native Android application for creating and managing college events, with registration support for both individual and team participation.",
     highlights: [
-      "Admin dashboard for event creation and analytics",
-      "Interest-based event filtering for personalized discovery",
-      "Real-time push notifications using FCM",
-      "Participation history tracking for students",
+      "Full-lifecycle native Android architecture built in Java & Android Studio",
+      "Real-time push notifications using Firebase Cloud Messaging (FCM) with 99%+ delivery reliability",
+      "Comprehensive admin dashboard for event creation, registration management, and attendance tracking",
+      "Personalized event discovery engine with category and interest-based filtering",
     ],
   },
   {

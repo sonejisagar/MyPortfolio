@@ -3,7 +3,7 @@ function Hero({ profile }) {
     <section className="mx-auto grid w-full max-w-6xl gap-10 px-4 py-16 sm:px-6 md:grid-cols-[1.4fr_1fr] md:py-24">
       <div className="animate-rise">
         <p className="mb-3 inline-flex rounded-full bg-brand-50 px-3 py-1 text-xs font-semibold text-brand-700 dark:bg-brand-700/20 dark:text-brand-100">
-          Android Developer
+          {profile.title}
         </p>
         <h1 className="text-3xl font-extrabold leading-tight text-slate-900 dark:text-white sm:text-5xl">
           {profile.name}
