@@ -42,22 +42,6 @@ function Projects({ projects }) {
                 {project.description}
               </p>
 
-              {/* Production Metrics Grid (Inspired by Manav's Portfolio) */}
-              {project.metrics && (
-                <div className="mt-4 grid grid-cols-2 gap-2.5 rounded-xl border border-slate-200/80 bg-slate-50/80 p-3 dark:border-slate-700/60 dark:bg-slate-900/60 sm:grid-cols-4">
-                  {project.metrics.map((m) => (
-                    <div key={m.label} className="flex flex-col">
-                      <span className="text-sm font-black text-slate-900 dark:text-emerald-300 sm:text-base">
-                        {m.value}
-                      </span>
-                      <span className="text-[10px] leading-tight font-medium text-slate-500 dark:text-slate-400">
-                        {m.label}
-                      </span>
-                    </div>
-                  ))}
-                </div>
-              )}
-
               {/* Tech Stack Pills */}
               <div className="mt-4 flex flex-wrap gap-1.5">
                 {project.stack.map((tech) => (

@@ -76,12 +76,6 @@ export const projects = [
     stack: ["Flutter", "Dart", "Gemini AI", "Google Cloud", "AdMob", "Google Play"],
     description:
       "Built and published a production Flutter app on Google Play Store that uses Gemini AI to extract contact details (names & phone numbers) from photos, scanned documents, PDFs, Excel, and Word files — and saves them directly to the phone's contacts with a single tap.",
-    metrics: [
-      { label: "Active Downloads", value: "100+" },
-      { label: "AI OCR Latency", value: "<1s" },
-      { label: "Supported Formats", value: "PDF, Word, Excel" },
-      { label: "Stability", value: "99.9% Crash-Free" },
-    ],
     highlights: [
       "Published on Google Play Store with active users & zero-crash production architecture",
       "Sub-second AI OCR response times via Cloudflare Workers edge proxy & Gemini 1.5 Flash",
@@ -99,12 +93,6 @@ export const projects = [
     stack: ["Flutter", "Dart", "Firebase", "Cloudflare Workers", "Google Play"],
     description:
       "Built and published a production Flutter app on Google Play Store featuring creator Link-in-Bio profiles, smart URL shortening with custom aliases, high-resolution QR code studio, and real-time click analytics — completely 100% ad-free with a modern Electric Violet aesthetic.",
-    metrics: [
-      { label: "Active Downloads", value: "100+" },
-      { label: "Ad Distraction", value: "100% Ad-Free" },
-      { label: "Redirect Speed", value: "Sub-Second" },
-      { label: "QR Studio", value: "High-Res Vector" },
-    ],
     highlights: [
       "Published on Google Play Store with 100% ad-free, distraction-free productivity",
       "Creator Link-in-Bio: Claim custom @username profiles with customizable glassmorphic themes",
@@ -119,10 +107,6 @@ export const projects = [
     stack: ["Java", "Android Studio", "Firebase", "FCM"],
     description:
       "Built an end-to-end native Android application for creating and managing college events, with registration support for both individual and team participation.",
-    metrics: [
-      { label: "FCM Reliability", value: "99%+" },
-      { label: "Registration Flows", value: "Solo & Team" },
-    ],
     highlights: [
       "Full-lifecycle native Android architecture built in Java & Android Studio",
       "Real-time push notifications using Firebase Cloud Messaging (FCM) with 99%+ delivery reliability",
