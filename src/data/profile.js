@@ -18,22 +18,22 @@ export const profile = {
 
 export const overviewStats = [
   {
-    value: "100+",
-    label: "Doc2Contact Downloads",
-    sub: "Google Play Store",
+    value: "2",
+    label: "Production Apps",
+    sub: "Live on Play Store",
     accent: "from-blue-500 to-cyan-500",
   },
   {
     value: "100+",
-    label: "LinkPulse Downloads",
+    label: "Active Downloads",
     sub: "Google Play Store",
-    accent: "from-purple-500 to-indigo-500",
+    accent: "from-emerald-500 to-teal-500",
   },
   {
-    value: "2",
-    label: "Production Apps",
-    sub: "Live on Play Store",
-    accent: "from-emerald-500 to-teal-500",
+    value: "10+",
+    label: "Core Technologies",
+    sub: "Flutter, AI & Cloud",
+    accent: "from-purple-500 to-indigo-500",
   },
   {
     value: "99.9%",
@@ -77,13 +77,13 @@ export const projects = [
     description:
       "Built and published a production Flutter app on Google Play Store that uses Gemini AI to extract contact details (names & phone numbers) from photos, scanned documents, PDFs, Excel, and Word files — and saves them directly to the phone's contacts with a single tap.",
     metrics: [
-      { label: "Play Store Downloads", value: "100+" },
+      { label: "Active Downloads", value: "100+" },
       { label: "AI OCR Latency", value: "<1s" },
-      { label: "Supported Formats", value: "PDF, Word, Excel, Images" },
-      { label: "Production Stability", value: "99.9% Crash-Free" },
+      { label: "Supported Formats", value: "PDF, Word, Excel" },
+      { label: "Stability", value: "99.9% Crash-Free" },
     ],
     highlights: [
-      "100+ active Google Play Store downloads with zero-crash production release architecture",
+      "Published on Google Play Store with active users & zero-crash production architecture",
       "Sub-second AI OCR response times via Cloudflare Workers edge proxy & Gemini 1.5 Flash",
       "Multi-format document intelligence engine supporting PDF, Excel (.xlsx), Word (.docx), and high-res images",
       "Full productivity workflow: 1-Tap phonebook save, duplicate contact detection, and CSV / Excel / PDF exports",
@@ -100,13 +100,13 @@ export const projects = [
     description:
       "Built and published a production Flutter app on Google Play Store featuring creator Link-in-Bio profiles, smart URL shortening with custom aliases, high-resolution QR code studio, and real-time click analytics — completely 100% ad-free with a modern Electric Violet aesthetic.",
     metrics: [
-      { label: "Play Store Downloads", value: "100+" },
+      { label: "Active Downloads", value: "100+" },
       { label: "Ad Distraction", value: "100% Ad-Free" },
       { label: "Redirect Speed", value: "Sub-Second" },
-      { label: "QR Code Studio", value: "High-Res Vector" },
+      { label: "QR Studio", value: "High-Res Vector" },
     ],
     highlights: [
-      "100+ downloads on Google Play Store with 100% ad-free, distraction-free productivity",
+      "Published on Google Play Store with 100% ad-free, distraction-free productivity",
       "Creator Link-in-Bio: Claim custom @username profiles with customizable glassmorphic themes",
       "Smart URL Shortener & QR Studio: Custom alias links with sub-second redirect & high-res QR code export",
       "Real-time click analytics dashboard tracking visits, referring devices, platforms, and locations",
@@ -120,7 +120,7 @@ export const projects = [
     description:
       "Built an end-to-end native Android application for creating and managing college events, with registration support for both individual and team participation.",
     metrics: [
-      { label: "FCM Push Reliability", value: "99%+" },
+      { label: "FCM Reliability", value: "99%+" },
       { label: "Registration Flows", value: "Solo & Team" },
     ],
     highlights: [

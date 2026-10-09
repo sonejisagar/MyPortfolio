@@ -93,7 +93,7 @@ function Projects({ projects }) {
                   <svg className="h-4 w-4" viewBox="0 0 24 24" fill="currentColor">
                     <path d="M3.609 1.814L13.792 12 3.61 22.186a2.43 2.43 0 0 1-.61-1.636V3.45a2.43 2.43 0 0 1 .61-1.636zm11.602 11.602l2.368 2.369-12.012 6.94 9.644-9.309zm0-2.832L5.567 1.275l12.012 6.94-2.368 2.369zm1.419 1.416l3.208 1.854a1.624 1.624 0 0 1 0 2.292l-3.208 1.854-2.148-2.148 2.148-1.852z" />
                   </svg>
-                  <span>Get on Google Play (100+ Downloads)</span>
+                  <span>Get on Google Play</span>
                 </a>
               </div>
             )}

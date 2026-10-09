@@ -94,11 +94,6 @@ function Hero({ profile, onCopyEmail }) {
 
         {/* Right Portrait & Terminal Card */}
         <div className="animate-rise relative rounded-2xl border border-slate-200 bg-white p-4 shadow-sm dark:border-slate-700 dark:bg-slate-800">
-          {/* Floating Play Store Downloads Badge */}
-          <div className="absolute -top-3 -right-3 z-10 flex items-center gap-1.5 rounded-full border border-emerald-500/40 bg-slate-900/90 px-3 py-1 shadow-lg backdrop-blur">
-            <span className="h-2 w-2 rounded-full bg-emerald-400 live-pulse-dot" />
-            <span className="text-[11px] font-bold text-emerald-300">100+ Downloads</span>
-          </div>
 
           <div className="rounded-xl bg-gradient-to-br from-brand-500/40 via-sky-400/20 to-indigo-500/40 p-[2px]">
             <img

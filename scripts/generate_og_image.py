@@ -115,11 +115,6 @@ card_h = 130
 draw.rounded_rectangle((text_x, card_y, text_x + card_w, card_y + card_h), radius=16, fill=(30, 41, 59, 210), outline=(71, 85, 105, 210), width=1)
 draw.text((text_x + 16, card_y + 14), "Doc2Contact", fill=(255, 255, 255), font=font_card_title)
 
-# 100+ Downloads Badge on Top-Right of Card 1
-d1_txt = "100+ Downloads"
-d1_w = draw.textlength(d1_txt, font=font_badge_dl)
-draw.rounded_rectangle((text_x + card_w - d1_w - 24, card_y + 12, text_x + card_w - 14, card_y + 32), radius=10, fill=(16, 185, 129, 35), outline=(16, 185, 129, 200), width=1)
-draw.text((text_x + card_w - d1_w - 19, card_y + 14), d1_txt, fill=(52, 211, 153), font=font_badge_dl)
 
 draw.text((text_x + 16, card_y + 40), "AI Document to Contacts App", fill=(148, 163, 184), font=font_card_desc)
 draw.text((text_x + 16, card_y + 64), "Gemini AI OCR  |  1-Tap Phonebook", fill=(56, 189, 248), font=font_card_sub)
@@ -136,11 +131,6 @@ c2_x = text_x + card_w + 16
 draw.rounded_rectangle((c2_x, card_y, c2_x + card_w, card_y + card_h), radius=16, fill=(30, 41, 59, 210), outline=(71, 85, 105, 210), width=1)
 draw.text((c2_x + 16, card_y + 14), "LinkPulse", fill=(255, 255, 255), font=font_card_title)
 
-# 100+ Downloads Badge on Top-Right of Card 2
-d2_txt = "100+ Downloads"
-d2_w = draw.textlength(d2_txt, font=font_badge_dl)
-draw.rounded_rectangle((c2_x + card_w - d2_w - 24, card_y + 12, c2_x + card_w - 14, card_y + 32), radius=10, fill=(16, 185, 129, 35), outline=(16, 185, 129, 200), width=1)
-draw.text((c2_x + card_w - d2_w - 19, card_y + 14), d2_txt, fill=(52, 211, 153), font=font_badge_dl)
 
 draw.text((c2_x + 16, card_y + 40), "Smart Bio Links & URL Shortener", fill=(148, 163, 184), font=font_card_desc)
 draw.text((c2_x + 16, card_y + 64), "Real-Time Analytics  |  QR Studio", fill=(192, 132, 252), font=font_card_sub)

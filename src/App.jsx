@@ -129,7 +129,7 @@ function App() {
               rel="noreferrer"
               className="text-emerald-500 hover:text-emerald-400 font-semibold"
             >
-              Google Play (100+ Downloads)
+              Google Play
             </a>
           </div>
         </div>
