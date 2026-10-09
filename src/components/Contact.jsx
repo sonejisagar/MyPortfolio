@@ -61,7 +61,7 @@ function Contact({ profile, onCopyEmail }) {
           </a>
           <a
             className="inline-flex items-center gap-1 rounded-lg border border-emerald-500/30 bg-emerald-500/10 px-3.5 py-1.5 text-emerald-700 transition hover:bg-emerald-500/20 dark:text-emerald-300"
-            href="https://play.google.com/store/apps/details?id=com.sagarsoneji.doc2contact"
+            href="https://play.google.com/store/apps/developer?id=Sagar+Soneji"
             target="_blank"
             rel="noreferrer"
           >

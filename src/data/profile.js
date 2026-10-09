@@ -6,6 +6,7 @@ export const profile = {
   email: "sagarsoneji999@gmail.com",
   linkedin: "https://www.linkedin.com/in/sagar-soneji-41b985378",
   github: "https://github.com/sonejisagar",
+  playStore: "https://play.google.com/store/apps/developer?id=Sagar+Soneji",
   summary:
     "MCA graduate and Mobile Developer (Flutter & Android) with live production apps on Google Play Store. I specialize in building fast, scalable mobile apps with Flutter, native Android, and Gemini AI integration.",
   introTerminal: [

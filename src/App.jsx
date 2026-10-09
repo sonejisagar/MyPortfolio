@@ -124,7 +124,7 @@ function App() {
               LinkedIn
             </a>
             <a
-              href="https://play.google.com/store/apps/details?id=com.sagarsoneji.doc2contact"
+              href="https://play.google.com/store/apps/developer?id=Sagar+Soneji"
               target="_blank"
               rel="noreferrer"
               className="text-emerald-500 hover:text-emerald-400 font-semibold"
