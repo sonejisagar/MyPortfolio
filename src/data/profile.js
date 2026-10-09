@@ -12,8 +12,36 @@ export const profile = {
     "> role: Flutter & Android Developer",
     "> mindset: Product Engineer & Problem Solver",
     "> focus: Flutter, Dart, Android, Gemini AI",
+    "> status: 2 Apps Shipped on Google Play",
   ],
 };
+
+export const overviewStats = [
+  {
+    value: "100+",
+    label: "Doc2Contact Downloads",
+    sub: "Google Play Store",
+    accent: "from-blue-500 to-cyan-500",
+  },
+  {
+    value: "100+",
+    label: "LinkPulse Downloads",
+    sub: "Google Play Store",
+    accent: "from-purple-500 to-indigo-500",
+  },
+  {
+    value: "2",
+    label: "Production Apps",
+    sub: "Live on Play Store",
+    accent: "from-emerald-500 to-teal-500",
+  },
+  {
+    value: "99.9%",
+    label: "Crash-Free Rate",
+    sub: "Production Architecture",
+    accent: "from-amber-500 to-orange-500",
+  },
+];
 
 export const skills = [
   {
@@ -41,37 +69,60 @@ export const skills = [
 export const projects = [
   {
     title: "Doc2Contact - AI Document to Contacts App",
+    tagline: "Instant Document OCR & Phonebook Synchronization",
+    downloads: "100+",
+    badge: "100+ Downloads",
+    playStore: "https://play.google.com/store/apps/details?id=com.sagarsoneji.doc2contact",
     stack: ["Flutter", "Dart", "Gemini AI", "Google Cloud", "AdMob", "Google Play"],
     description:
       "Built and published a production Flutter app on Google Play Store that uses Gemini AI to extract contact details (names & phone numbers) from photos, scanned documents, PDFs, Excel, and Word files — and saves them directly to the phone's contacts with a single tap.",
+    metrics: [
+      { label: "Play Store Downloads", value: "100+" },
+      { label: "AI OCR Latency", value: "<1s" },
+      { label: "Supported Formats", value: "PDF, Word, Excel, Images" },
+      { label: "Production Stability", value: "99.9% Crash-Free" },
+    ],
     highlights: [
-      "Published on Google Play Store with active users & zero-crash production release architecture",
+      "100+ active Google Play Store downloads with zero-crash production release architecture",
       "Sub-second AI OCR response times via Cloudflare Workers edge proxy & Gemini 1.5 Flash",
       "Multi-format document intelligence engine supporting PDF, Excel (.xlsx), Word (.docx), and high-res images",
       "Full productivity workflow: 1-Tap phonebook save, duplicate contact detection, and CSV / Excel / PDF exports",
       "Integrated Google AdMob banner, app open, interstitial, and rewarded video ads with scan bonuses",
     ],
-    playStore: "https://play.google.com/store/apps/details?id=com.sagarsoneji.doc2contact",
   },
   {
     title: "LinkPulse - Smart Links & Bio Pages",
+    tagline: "Creator Bio Pages, Smart Short Links & 4K QR Studio",
+    downloads: "100+",
+    badge: "100+ Downloads",
+    playStore: "https://play.google.com/store/apps/details?id=com.sagarsoneji.linkpulse&pcampaignid=web_share",
     stack: ["Flutter", "Dart", "Firebase", "Cloudflare Workers", "Google Play"],
     description:
       "Built and published a production Flutter app on Google Play Store featuring creator Link-in-Bio profiles, smart URL shortening with custom aliases, high-resolution QR code studio, and real-time click analytics — completely 100% ad-free with a modern Electric Violet aesthetic.",
+    metrics: [
+      { label: "Play Store Downloads", value: "100+" },
+      { label: "Ad Distraction", value: "100% Ad-Free" },
+      { label: "Redirect Speed", value: "Sub-Second" },
+      { label: "QR Code Studio", value: "High-Res Vector" },
+    ],
     highlights: [
-      "Published on Google Play Store with 100% ad-free, distraction-free productivity",
+      "100+ downloads on Google Play Store with 100% ad-free, distraction-free productivity",
       "Creator Link-in-Bio: Claim custom @username profiles with customizable glassmorphic themes",
       "Smart URL Shortener & QR Studio: Custom alias links with sub-second redirect & high-res QR code export",
       "Real-time click analytics dashboard tracking visits, referring devices, platforms, and locations",
       "Scalable backend architecture with Flutter, Firebase Firestore, and Cloudflare Workers proxy",
     ],
-    playStore: "https://play.google.com/store/apps/details?id=com.sagarsoneji.linkpulse&pcampaignid=web_share",
   },
   {
     title: "CollexaHub - College Event Management App",
+    tagline: "End-to-End Event Discovery & Registration Platform",
     stack: ["Java", "Android Studio", "Firebase", "FCM"],
     description:
       "Built an end-to-end native Android application for creating and managing college events, with registration support for both individual and team participation.",
+    metrics: [
+      { label: "FCM Push Reliability", value: "99%+" },
+      { label: "Registration Flows", value: "Solo & Team" },
+    ],
     highlights: [
       "Full-lifecycle native Android architecture built in Java & Android Studio",
       "Real-time push notifications using Firebase Cloud Messaging (FCM) with 99%+ delivery reliability",
@@ -81,6 +132,7 @@ export const projects = [
   },
   {
     title: "Shamballa - Spiritual Platform",
+    tagline: "Full-Stack Web Platform & Donation Management",
     stack: ["PHP", "HTML", "CSS", "MySQL"],
     description:
       "Developed a dynamic full-stack web platform with donation flows, content publishing, and admin management capabilities.",
@@ -92,6 +144,7 @@ export const projects = [
   },
   {
     title: "Cube Runner - 3D Endless Runner",
+    tagline: "Physics-Based Endless Runner Game",
     stack: ["Unity", "C#"],
     description:
       "Designed and developed an endless runner game with dynamic difficulty scaling and responsive controls.",

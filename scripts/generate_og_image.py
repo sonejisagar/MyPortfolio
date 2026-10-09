@@ -36,7 +36,8 @@ font_sub = ImageFont.truetype(font_path_regular, 19)
 font_card_title = ImageFont.truetype(font_path_bold, 18)
 font_card_desc = ImageFont.truetype(font_path_regular, 14)
 font_card_sub = ImageFont.truetype(font_path_semibold, 13)
-font_badge_play = ImageFont.truetype(font_path_bold, 12)
+font_badge_play = ImageFont.truetype(font_path_bold, 11)
+font_badge_dl = ImageFont.truetype(font_path_bold, 11)
 font_pill = ImageFont.truetype(font_path_semibold, 14)
 font_footer = ImageFont.truetype(font_path_regular, 14)
 font_status = ImageFont.truetype(font_path_bold, 13)
@@ -113,6 +114,13 @@ card_h = 130
 # --- Card 1: Doc2Contact ---
 draw.rounded_rectangle((text_x, card_y, text_x + card_w, card_y + card_h), radius=16, fill=(30, 41, 59, 210), outline=(71, 85, 105, 210), width=1)
 draw.text((text_x + 16, card_y + 14), "Doc2Contact", fill=(255, 255, 255), font=font_card_title)
+
+# 100+ Downloads Badge on Top-Right of Card 1
+d1_txt = "100+ Downloads"
+d1_w = draw.textlength(d1_txt, font=font_badge_dl)
+draw.rounded_rectangle((text_x + card_w - d1_w - 24, card_y + 12, text_x + card_w - 14, card_y + 32), radius=10, fill=(16, 185, 129, 35), outline=(16, 185, 129, 200), width=1)
+draw.text((text_x + card_w - d1_w - 19, card_y + 14), d1_txt, fill=(52, 211, 153), font=font_badge_dl)
+
 draw.text((text_x + 16, card_y + 40), "AI Document to Contacts App", fill=(148, 163, 184), font=font_card_desc)
 draw.text((text_x + 16, card_y + 64), "Gemini AI OCR  |  1-Tap Phonebook", fill=(56, 189, 248), font=font_card_sub)
 
@@ -121,12 +129,19 @@ play_bg_x = text_x + 16
 play_bg_y = card_y + 92
 draw.rounded_rectangle((play_bg_x, play_bg_y, play_bg_x + 154, play_bg_y + 26), radius=7, fill=(15, 23, 42, 255), outline=(16, 185, 129, 220), width=1)
 draw.polygon([(play_bg_x + 12, play_bg_y + 7), (play_bg_x + 12, play_bg_y + 19), (play_bg_x + 22, play_bg_y + 13)], fill=(52, 211, 153))
-draw.text((play_bg_x + 28, play_bg_y + 4), "Google Play Store", fill=(240, 253, 244), font=font_badge_play)
+draw.text((play_bg_x + 28, play_bg_y + 5), "Google Play Store", fill=(240, 253, 244), font=font_badge_play)
 
 # --- Card 2: LinkPulse ---
 c2_x = text_x + card_w + 16
 draw.rounded_rectangle((c2_x, card_y, c2_x + card_w, card_y + card_h), radius=16, fill=(30, 41, 59, 210), outline=(71, 85, 105, 210), width=1)
 draw.text((c2_x + 16, card_y + 14), "LinkPulse", fill=(255, 255, 255), font=font_card_title)
+
+# 100+ Downloads Badge on Top-Right of Card 2
+d2_txt = "100+ Downloads"
+d2_w = draw.textlength(d2_txt, font=font_badge_dl)
+draw.rounded_rectangle((c2_x + card_w - d2_w - 24, card_y + 12, c2_x + card_w - 14, card_y + 32), radius=10, fill=(16, 185, 129, 35), outline=(16, 185, 129, 200), width=1)
+draw.text((c2_x + card_w - d2_w - 19, card_y + 14), d2_txt, fill=(52, 211, 153), font=font_badge_dl)
+
 draw.text((c2_x + 16, card_y + 40), "Smart Bio Links & URL Shortener", fill=(148, 163, 184), font=font_card_desc)
 draw.text((c2_x + 16, card_y + 64), "Real-Time Analytics  |  QR Studio", fill=(192, 132, 252), font=font_card_sub)
 
@@ -135,7 +150,7 @@ p2_bg_x = c2_x + 16
 p2_bg_y = card_y + 92
 draw.rounded_rectangle((p2_bg_x, p2_bg_y, p2_bg_x + 154, p2_bg_y + 26), radius=7, fill=(15, 23, 42, 255), outline=(16, 185, 129, 220), width=1)
 draw.polygon([(p2_bg_x + 12, p2_bg_y + 7), (p2_bg_x + 12, p2_bg_y + 19), (p2_bg_x + 22, p2_bg_y + 13)], fill=(52, 211, 153))
-draw.text((p2_bg_x + 28, p2_bg_y + 4), "Google Play Store", fill=(240, 253, 244), font=font_badge_play)
+draw.text((p2_bg_x + 28, p2_bg_y + 5), "Google Play Store", fill=(240, 253, 244), font=font_badge_play)
 
 # 4. Tech Stack Badges
 skills = ["Flutter", "Dart", "Android (Java)", "Gemini AI", "Firebase", "Cloudflare"]
@@ -155,4 +170,4 @@ draw.text((text_x, footer_y), "github.com/sonejisagar    |    linkedin.com/in/sa
 bg_rgb = bg.convert('RGB')
 bg_rgb.save('public/og-image.png', format='PNG', quality=95)
 bg_rgb.save('public/og-image.jpg', format='JPEG', quality=95)
-print("Successfully generated refined public/og-image.png and public/og-image.jpg")
+print("Successfully generated refined public/og-image.png and public/og-image.jpg with 100+ downloads")
