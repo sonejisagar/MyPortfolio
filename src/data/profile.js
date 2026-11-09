@@ -8,24 +8,24 @@ export const profile = {
   github: "https://github.com/sonejisagar",
   playStore: "https://play.google.com/store/apps/developer?id=Sagar+Soneji",
   summary:
-    "MCA graduate and Mobile Developer (Flutter & Android) with live production apps on Google Play Store. I specialize in building fast, scalable mobile apps with Flutter, native Android, and Gemini AI integration.",
+    "MCA graduate and Mobile Developer (Flutter & Android) with 3 live production apps on Google Play Store. I specialize in building fast, scalable mobile apps with Flutter, native Android, offline-first architectures, and Gemini AI integration.",
   introTerminal: [
     "> role: Flutter & Android Developer",
     "> mindset: Product Engineer & Problem Solver",
     "> focus: Flutter, Dart, Android, Gemini AI",
-    "> status: 2 Apps Shipped on Google Play",
+    "> status: 3 Apps Shipped on Google Play",
   ],
 };
 
 export const overviewStats = [
   {
-    value: "2",
+    value: "3",
     label: "Production Apps",
     sub: "Live on Play Store",
     accent: "from-blue-500 to-cyan-500",
   },
   {
-    value: "100+",
+    value: "250+",
     label: "Active Downloads",
     sub: "Google Play Store",
     accent: "from-emerald-500 to-teal-500",
@@ -47,7 +47,7 @@ export const overviewStats = [
 export const skills = [
   {
     group: "Mobile Development",
-    items: ["Flutter", "Dart", "Android (Java)", "Android Studio", "Kotlin (Basic)", "REST APIs"],
+    items: ["Flutter", "Dart", "Android (Java)", "Android Studio", "Kotlin (Basic)", "REST APIs", "Provider"],
   },
   {
     group: "AI Tools & Agents",
@@ -55,7 +55,7 @@ export const skills = [
   },
   {
     group: "Cloud & Backend",
-    items: ["Firebase Firestore", "Firebase Cloud Messaging (FCM)", "Google Cloud", "Cloudflare Workers", "MySQL"],
+    items: ["Firebase Firestore", "Firebase Crashlytics", "Firebase Cloud Messaging (FCM)", "Google Cloud", "Cloudflare Workers", "MySQL"],
   },
   {
     group: "Web & Other",
@@ -100,6 +100,23 @@ export const projects = [
       "Smart URL Shortener & QR Studio: Custom alias links with sub-second redirect & high-res QR code export",
       "Real-time click analytics dashboard tracking visits, referring devices, platforms, and locations",
       "Scalable backend architecture with Flutter, Firebase Firestore, and Cloudflare Workers proxy",
+    ],
+  },
+  {
+    title: "LTO Exam Coach – Philippines",
+    tagline: "Offline Driving Exam Reviewer, Timed Mock Tests & Road Signs",
+    downloads: "50+",
+    badge: "50+ Downloads",
+    playStore: "https://play.google.com/store/apps/details?id=com.ltoexamcoach.philippines",
+    stack: ["Flutter", "Dart", "Provider", "Firebase Crashlytics", "Google AdMob", "Offline-First", "Google Play"],
+    description:
+      "Engineered and published an offline-first reviewer and test preparation mobile app on Google Play Store for Filipino driver's license applicants. Features 150+ categorized exam questions, realistic timed mock exams with pass/fail benchmarks, 45+ vector road signs, and targeted mistake remediation.",
+    highlights: [
+      "Published on Google Play Store with 50+ downloads and 100% offline-first local storage architecture",
+      "Realistic Timed Mock Exams with 20-min countdown timer, vehicle filtering (Car / Motorcycle), and 80% passing benchmark",
+      "Interactive 45+ Road Signs Catalog rendered in high-resolution custom Canvas vector graphics (DPWH standards)",
+      "Targeted Mistake Bank & Bookmark remediation engine for auto-tracking incorrect answers & difficult questions",
+      "Integrated Firebase Analytics, Crashlytics, Google AdMob, local notification study reminders & in-app updates",
     ],
   },
   {

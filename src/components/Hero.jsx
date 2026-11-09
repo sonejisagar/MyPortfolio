@@ -23,7 +23,7 @@ function Hero({ profile, onCopyEmail }) {
               <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75"></span>
               <span className="relative inline-flex h-2 w-2 rounded-full bg-emerald-500"></span>
             </span>
-            <span>2 Shipped Apps on Google Play Store</span>
+            <span>3 Shipped Apps on Google Play Store</span>
           </div>
 
           {/* Name with Shimmer Sheen */}

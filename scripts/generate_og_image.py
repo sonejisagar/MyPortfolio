@@ -32,15 +32,15 @@ if not os.path.exists(font_path_semibold):
 font_eyebrow = ImageFont.truetype(font_path_bold, 13)
 font_name = ImageFont.truetype(font_path_bold, 54)
 font_title = ImageFont.truetype(font_path_bold, 32)
-font_sub = ImageFont.truetype(font_path_regular, 19)
-font_card_title = ImageFont.truetype(font_path_bold, 18)
-font_card_desc = ImageFont.truetype(font_path_regular, 14)
-font_card_sub = ImageFont.truetype(font_path_semibold, 13)
-font_badge_play = ImageFont.truetype(font_path_bold, 11)
-font_badge_dl = ImageFont.truetype(font_path_bold, 11)
-font_pill = ImageFont.truetype(font_path_semibold, 14)
+font_sub = ImageFont.truetype(font_path_regular, 18)
+font_card_title = ImageFont.truetype(font_path_bold, 15)
+font_card_desc = ImageFont.truetype(font_path_regular, 11)
+font_card_sub = ImageFont.truetype(font_path_semibold, 10)
+font_badge_play = ImageFont.truetype(font_path_bold, 10)
+font_badge_dl = ImageFont.truetype(font_path_bold, 10)
+font_pill = ImageFont.truetype(font_path_semibold, 13)
 font_footer = ImageFont.truetype(font_path_regular, 14)
-font_status = ImageFont.truetype(font_path_bold, 13)
+font_status = ImageFont.truetype(font_path_bold, 12)
 
 # 2. Left Photo Card
 photo_path = 'public/profile.jpg'
@@ -74,7 +74,7 @@ if os.path.exists(photo_path):
     bg.paste(avatar, (frame_x + 7, frame_y + 7), mask)
     
     # Status badge over bottom of photo
-    status_w = 264
+    status_w = 276
     status_h = 36
     status_x = frame_x + (frame_w - status_w) // 2
     status_y = frame_y + frame_h - 18
@@ -83,9 +83,9 @@ if os.path.exists(photo_path):
     draw.rounded_rectangle((status_x, status_y, status_x + status_w, status_y + status_h), radius=18, fill=(15, 23, 42, 255), outline=(16, 185, 129, 240), width=2)
     
     # Bright green pulse dot
-    dot_x, dot_y = status_x + 18, status_y + 13
+    dot_x, dot_y = status_x + 16, status_y + 13
     draw.ellipse((dot_x, dot_y, dot_x + 10, dot_y + 10), fill=(52, 211, 153))
-    draw.text((status_x + 36, status_y + 8), "LIVE APPS ON GOOGLE PLAY", fill=(240, 253, 244), font=font_status)
+    draw.text((status_x + 34, status_y + 9), "3 APPS ON GOOGLE PLAY (250+ DL)", fill=(240, 253, 244), font=font_status)
 
 # 3. Right Side Content
 text_x = 540
@@ -104,53 +104,62 @@ draw.text((text_x, 178), "Flutter & Android Developer", fill=(56, 189, 248), fon
 
 # Tagline
 draw.text((text_x, 226), "Building production mobile apps with Flutter, native Android,", fill=(226, 232, 240), font=font_sub)
-draw.text((text_x, 252), "and modern Gemini AI integrations.", fill=(148, 163, 184), font=font_sub)
+draw.text((text_x, 252), "offline-first architecture, and Gemini AI workflows.", fill=(148, 163, 184), font=font_sub)
 
-# Project Cards
+# 3 Project Cards
 card_y = 296
-card_w = 285
-card_h = 130
+card_w = 194
+card_h = 132
+card_gap = 14
 
-# --- Card 1: Doc2Contact ---
-draw.rounded_rectangle((text_x, card_y, text_x + card_w, card_y + card_h), radius=16, fill=(30, 41, 59, 210), outline=(71, 85, 105, 210), width=1)
-draw.text((text_x + 16, card_y + 14), "Doc2Contact", fill=(255, 255, 255), font=font_card_title)
+cards_data = [
+    {
+        "title": "Doc2Contact",
+        "desc": "AI Doc to Contacts",
+        "sub": "Gemini OCR | 1-Tap Save",
+        "badge": "100+ Downloads",
+        "sub_color": (56, 189, 248),
+    },
+    {
+        "title": "LinkPulse",
+        "desc": "Smart Links & Bio Pages",
+        "sub": "Analytics | QR Studio",
+        "badge": "100+ Downloads",
+        "sub_color": (192, 132, 252),
+    },
+    {
+        "title": "LTO Exam Coach",
+        "desc": "PH Driving Exam Review",
+        "sub": "Mock Tests | Road Signs",
+        "badge": "50+ Downloads",
+        "sub_color": (251, 191, 36),
+    },
+]
 
-
-draw.text((text_x + 16, card_y + 40), "AI Document to Contacts App", fill=(148, 163, 184), font=font_card_desc)
-draw.text((text_x + 16, card_y + 64), "Gemini AI OCR  |  1-Tap Phonebook", fill=(56, 189, 248), font=font_card_sub)
-
-# High-contrast Google Play Badge
-play_bg_x = text_x + 16
-play_bg_y = card_y + 92
-draw.rounded_rectangle((play_bg_x, play_bg_y, play_bg_x + 154, play_bg_y + 26), radius=7, fill=(15, 23, 42, 255), outline=(16, 185, 129, 220), width=1)
-draw.polygon([(play_bg_x + 12, play_bg_y + 7), (play_bg_x + 12, play_bg_y + 19), (play_bg_x + 22, play_bg_y + 13)], fill=(52, 211, 153))
-draw.text((play_bg_x + 28, play_bg_y + 5), "Google Play Store", fill=(240, 253, 244), font=font_badge_play)
-
-# --- Card 2: LinkPulse ---
-c2_x = text_x + card_w + 16
-draw.rounded_rectangle((c2_x, card_y, c2_x + card_w, card_y + card_h), radius=16, fill=(30, 41, 59, 210), outline=(71, 85, 105, 210), width=1)
-draw.text((c2_x + 16, card_y + 14), "LinkPulse", fill=(255, 255, 255), font=font_card_title)
-
-
-draw.text((c2_x + 16, card_y + 40), "Smart Bio Links & URL Shortener", fill=(148, 163, 184), font=font_card_desc)
-draw.text((c2_x + 16, card_y + 64), "Real-Time Analytics  |  QR Studio", fill=(192, 132, 252), font=font_card_sub)
-
-# High-contrast Google Play Badge
-p2_bg_x = c2_x + 16
-p2_bg_y = card_y + 92
-draw.rounded_rectangle((p2_bg_x, p2_bg_y, p2_bg_x + 154, p2_bg_y + 26), radius=7, fill=(15, 23, 42, 255), outline=(16, 185, 129, 220), width=1)
-draw.polygon([(p2_bg_x + 12, p2_bg_y + 7), (p2_bg_x + 12, p2_bg_y + 19), (p2_bg_x + 22, p2_bg_y + 13)], fill=(52, 211, 153))
-draw.text((p2_bg_x + 28, p2_bg_y + 5), "Google Play Store", fill=(240, 253, 244), font=font_badge_play)
+for i, card in enumerate(cards_data):
+    cx = text_x + i * (card_w + card_gap)
+    draw.rounded_rectangle((cx, card_y, cx + card_w, card_y + card_h), radius=14, fill=(30, 41, 59, 210), outline=(71, 85, 105, 210), width=1)
+    draw.text((cx + 12, card_y + 12), card["title"], fill=(255, 255, 255), font=font_card_title)
+    draw.text((cx + 12, card_y + 36), card["desc"], fill=(148, 163, 184), font=font_card_desc)
+    draw.text((cx + 12, card_y + 58), card["sub"], fill=card["sub_color"], font=font_card_sub)
+    
+    # Play store / Downloads badge
+    badge_bg_x = cx + 12
+    badge_bg_y = card_y + 90
+    badge_w = card_w - 24
+    draw.rounded_rectangle((badge_bg_x, badge_bg_y, badge_bg_x + badge_w, badge_bg_y + 26), radius=7, fill=(15, 23, 42, 255), outline=(16, 185, 129, 220), width=1)
+    draw.polygon([(badge_bg_x + 8, badge_bg_y + 7), (badge_bg_x + 8, badge_bg_y + 19), (badge_bg_x + 16, badge_bg_y + 13)], fill=(52, 211, 153))
+    draw.text((badge_bg_x + 22, badge_bg_y + 6), f"Play | {card['badge']}", fill=(240, 253, 244), font=font_badge_play)
 
 # 4. Tech Stack Badges
-skills = ["Flutter", "Dart", "Android (Java)", "Gemini AI", "Firebase", "Cloudflare"]
+skills_list = ["Flutter", "Dart", "Android (Java)", "Gemini AI", "Firebase", "Offline-First"]
 pill_x = text_x
 pill_y = 448
-for s in skills:
+for s in skills_list:
     sw = draw.textlength(s, font=font_pill)
-    draw.rounded_rectangle((pill_x, pill_y, pill_x + sw + 22, pill_y + 30), radius=15, fill=(15, 23, 42, 230), outline=(71, 85, 105, 210), width=1)
-    draw.text((pill_x + 11, pill_y + 5), s, fill=(226, 232, 240), font=font_pill)
-    pill_x += int(sw) + 26
+    draw.rounded_rectangle((pill_x, pill_y, pill_x + sw + 20, pill_y + 28), radius=14, fill=(15, 23, 42, 230), outline=(71, 85, 105, 210), width=1)
+    draw.text((pill_x + 10, pill_y + 5), s, fill=(226, 232, 240), font=font_pill)
+    pill_x += int(sw) + 24
 
 # 5. Footer Links
 footer_y = 512
@@ -160,4 +169,4 @@ draw.text((text_x, footer_y), "github.com/sonejisagar    |    linkedin.com/in/sa
 bg_rgb = bg.convert('RGB')
 bg_rgb.save('public/og-image.png', format='PNG', quality=95)
 bg_rgb.save('public/og-image.jpg', format='JPEG', quality=95)
-print("Successfully generated refined public/og-image.png and public/og-image.jpg with 100+ downloads")
+print("Successfully generated refined public/og-image.png and public/og-image.jpg with 3 apps and 250+ downloads")
