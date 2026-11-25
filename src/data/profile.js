@@ -69,7 +69,7 @@ export const skills = [
 
 export const projects = [
   {
-    title: "Doc2Contact - AI Document to Contacts App",
+    title: "Contact Scanner - AI Document to Contacts App",
     tagline: "Instant Document OCR & Phonebook Synchronization",
     downloads: "100+",
     badge: "100+ Downloads",
@@ -78,7 +78,7 @@ export const projects = [
     description:
       "Built and published a production Flutter app on Google Play Store that uses Gemini AI to extract contact details (names & phone numbers) from photos, scanned documents, PDFs, Excel, and Word files — and saves them directly to the phone's contacts with a single tap.",
     highlights: [
-      "Published on Google Play Store with active users & zero-crash production architecture",
+      "Published on Google Play Store with zero-crash production architecture",
       "Sub-second AI OCR response times via Cloudflare Workers edge proxy & Gemini 1.5 Flash",
       "Multi-format document intelligence engine supporting PDF, Excel (.xlsx), Word (.docx), and high-res images",
       "Full productivity workflow: 1-Tap phonebook save, duplicate contact detection, and CSV / Excel / PDF exports",
@@ -112,7 +112,7 @@ export const projects = [
     description:
       "Engineered and published an offline-first reviewer and test preparation mobile app on Google Play Store for Filipino driver's license applicants. Features 150+ categorized exam questions, realistic timed mock exams with pass/fail benchmarks, 45+ vector road signs, and targeted mistake remediation.",
     highlights: [
-      "Published on Google Play Store with 50+ downloads and 100% offline-first local storage architecture",
+      "Published on Google Play Store with 100% offline-first local storage architecture and 0-crash stability",
       "Realistic Timed Mock Exams with 20-min countdown timer, vehicle filtering (Car / Motorcycle), and 80% passing benchmark",
       "Interactive 45+ Road Signs Catalog rendered in high-resolution custom Canvas vector graphics (DPWH standards)",
       "Targeted Mistake Bank & Bookmark remediation engine for auto-tracking incorrect answers & difficult questions",
@@ -127,9 +127,9 @@ export const projects = [
     playStore: "https://play.google.com/store/apps/details?id=com.merchmock.tshirt.design.studio&pcampaignid=web_share",
     stack: ["Flutter", "Dart", "fal.ai (FLUX.1)", "Virtual Try-On (VTON)", "Gemini AI", "Google Play"],
     description:
-      "Built and published a professional apparel mockup studio on Google Play Store with 50+ downloads. Features photorealistic AI fashion models, seamless virtual try-on technology that drapes custom garments on user photos, realistic fabric texture simulation, and 2000×2000 HD studio exports.",
+      "Built and published a professional apparel mockup studio on Google Play Store. Features photorealistic AI fashion models, seamless virtual try-on technology that drapes custom garments on user photos, realistic fabric texture simulation, and 2000×2000 HD studio exports.",
     highlights: [
-      "Published on Google Play Store with 50+ downloads & studio-grade production architecture",
+      "Published on Google Play Store with studio-grade production architecture & zero-crash performance",
       "Photorealistic AI Fashion Models: Generates male & female models in studio, street, and cyberpunk vibes via FLUX.1 neural image synthesis",
       "AI Virtual Try-On (VTON): Real-time neural try-on engine draping user-designed garments onto custom uploaded photos and selfies",
       "Realistic Fabric Engine: Advanced shadow-map blending, natural fabric drape, folds, and dual-layer logo/text positioning with Google Fonts",

@@ -113,7 +113,7 @@ gap_y = 10
 
 cards_data = [
     {
-        "title": "Doc2Contact",
+        "title": "Contact Scanner",
         "badge": "100+ DL",
         "sub": "AI Document OCR & 1-Tap Save",
         "sub_color": (56, 189, 248),
