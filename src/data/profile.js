@@ -71,6 +71,7 @@ export const projects = [
   {
     title: "Doc2Contact: Contact Scanner",
     tagline: "Instant Document OCR & Phonebook Synchronization",
+    icon: "/projects/doc2contact.png",
     downloads: "100+",
     badge: "100+ Downloads",
     playStore: "https://play.google.com/store/apps/details?id=com.sagarsoneji.doc2contact",
@@ -88,6 +89,7 @@ export const projects = [
   {
     title: "LinkPulse - Smart Links & Bio Pages",
     tagline: "Creator Bio Pages, Smart Short Links & 4K QR Studio",
+    icon: "/projects/linkpulse.png",
     downloads: "100+",
     badge: "100+ Downloads",
     playStore: "https://play.google.com/store/apps/details?id=com.sagarsoneji.linkpulse&pcampaignid=web_share",
@@ -105,6 +107,7 @@ export const projects = [
   {
     title: "LTO Exam Coach – Philippines",
     tagline: "Offline Driving Exam Reviewer, Timed Mock Tests & Road Signs",
+    icon: "/projects/ltoexamcoach.png",
     downloads: "50+",
     badge: "50+ Downloads",
     playStore: "https://play.google.com/store/apps/details?id=com.ltoexamcoach.philippines",
@@ -122,6 +125,7 @@ export const projects = [
   {
     title: "MerchMock - T-Shirt & Apparel Design Studio",
     tagline: "AI Fashion Models, Virtual Try-On & Realistic Apparel Mockups",
+    icon: "/projects/merchmock.png",
     downloads: "50+",
     badge: "50+ Downloads",
     playStore: "https://play.google.com/store/apps/details?id=com.merchmock.tshirt.design.studio&pcampaignid=web_share",

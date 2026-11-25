@@ -15,26 +15,38 @@ function Projects({ projects }) {
             className="glow-card group relative flex flex-col justify-between rounded-2xl border border-slate-200/90 bg-white p-6 shadow-sm transition-all duration-300 hover:border-brand-500/50 hover:shadow-card-hover dark:border-slate-700/80 dark:bg-slate-800 dark:hover:border-brand-400/40 dark:hover:shadow-card-hover-dark"
           >
             <div>
-              {/* Top Header: Title & 100+ Downloads Badge */}
-              <div className="flex flex-wrap items-start justify-between gap-2">
-                <div className="flex-1">
-                  <h3 className="text-xl font-bold tracking-tight text-slate-900 transition-colors group-hover:text-brand-600 dark:text-slate-100 dark:group-hover:text-brand-300">
-                    {project.title}
-                  </h3>
-                  {project.tagline && (
-                    <p className="mt-1 text-xs font-medium text-brand-600 dark:text-brand-300">
-                      {project.tagline}
-                    </p>
-                  )}
-                </div>
-
-                {/* 100+ Downloads Badge */}
-                {project.downloads && (
-                  <span className="inline-flex items-center gap-1.5 rounded-full border border-emerald-500/40 bg-emerald-50 px-3 py-1 text-xs font-bold text-emerald-700 shadow-sm dark:border-emerald-400/30 dark:bg-emerald-950/60 dark:text-emerald-300">
-                    <span className="h-2 w-2 rounded-full bg-emerald-500 live-pulse-dot" />
-                    <span>{project.downloads} Downloads</span>
-                  </span>
+              {/* Top Header: Icon, Title & Downloads Badge */}
+              <div className="flex items-start gap-3.5">
+                {project.icon && (
+                  <img
+                    src={project.icon}
+                    alt={`${project.title} icon`}
+                    className="h-14 w-14 shrink-0 rounded-2xl border border-slate-200/80 object-cover shadow-sm transition-transform duration-300 group-hover:scale-105 dark:border-slate-700/80"
+                    loading="lazy"
+                  />
                 )}
+                <div className="flex-1 min-w-0">
+                  <div className="flex flex-wrap items-start justify-between gap-2">
+                    <div className="flex-1 min-w-0">
+                      <h3 className="text-xl font-bold tracking-tight text-slate-900 transition-colors group-hover:text-brand-600 dark:text-slate-100 dark:group-hover:text-brand-300">
+                        {project.title}
+                      </h3>
+                      {project.tagline && (
+                        <p className="mt-1 text-xs font-medium text-brand-600 dark:text-brand-300">
+                          {project.tagline}
+                        </p>
+                      )}
+                    </div>
+
+                    {/* Downloads Badge */}
+                    {project.downloads && (
+                      <span className="inline-flex items-center gap-1.5 rounded-full border border-emerald-500/40 bg-emerald-50 px-3 py-1 text-xs font-bold text-emerald-700 shadow-sm dark:border-emerald-400/30 dark:bg-emerald-950/60 dark:text-emerald-300 shrink-0">
+                        <span className="h-2 w-2 rounded-full bg-emerald-500 live-pulse-dot" />
+                        <span>{project.downloads} Downloads</span>
+                      </span>
+                    )}
+                  </div>
+                </div>
               </div>
 
               {/* Description */}
