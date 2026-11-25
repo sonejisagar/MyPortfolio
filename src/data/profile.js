@@ -69,7 +69,7 @@ export const skills = [
 
 export const projects = [
   {
-    title: "Contact Scanner - AI Document to Contacts App",
+    title: "Doc2Contact: Contact Scanner",
     tagline: "Instant Document OCR & Phonebook Synchronization",
     downloads: "100+",
     badge: "100+ Downloads",
