@@ -8,24 +8,24 @@ export const profile = {
   github: "https://github.com/sonejisagar",
   playStore: "https://play.google.com/store/apps/developer?id=Sagar+Soneji",
   summary:
-    "MCA graduate and Mobile Developer (Flutter & Android) with 3 live production apps on Google Play Store. I specialize in building fast, scalable mobile apps with Flutter, native Android, offline-first architectures, and Gemini AI integration.",
+    "MCA graduate and Mobile Developer (Flutter & Android) with 4 live production apps on Google Play Store. I specialize in building fast, scalable mobile apps with Flutter, native Android, Generative AI (FLUX & Virtual Try-On), and Gemini AI integration.",
   introTerminal: [
     "> role: Flutter & Android Developer",
     "> mindset: Product Engineer & Problem Solver",
     "> focus: Flutter, Dart, Android, Gemini AI",
-    "> status: 3 Apps Shipped on Google Play",
+    "> status: 4 Apps Shipped on Google Play",
   ],
 };
 
 export const overviewStats = [
   {
-    value: "3",
+    value: "4",
     label: "Production Apps",
     sub: "Live on Play Store",
     accent: "from-blue-500 to-cyan-500",
   },
   {
-    value: "250+",
+    value: "300+",
     label: "Active Downloads",
     sub: "Google Play Store",
     accent: "from-emerald-500 to-teal-500",
@@ -51,7 +51,7 @@ export const skills = [
   },
   {
     group: "AI Tools & Agents",
-    items: ["Antigravity", "Gemini API", "Claude", "Cursor", "GitHub Copilot", "AI Agent Workflows"],
+    items: ["Antigravity", "Gemini API", "fal.ai (FLUX.1)", "Virtual Try-On (VTON)", "Claude", "Cursor", "AI Agent Workflows"],
   },
   {
     group: "Cloud & Backend",
@@ -117,6 +117,23 @@ export const projects = [
       "Interactive 45+ Road Signs Catalog rendered in high-resolution custom Canvas vector graphics (DPWH standards)",
       "Targeted Mistake Bank & Bookmark remediation engine for auto-tracking incorrect answers & difficult questions",
       "Integrated Firebase Analytics, Crashlytics, Google AdMob, local notification study reminders & in-app updates",
+    ],
+  },
+  {
+    title: "MerchMock - T-Shirt & Apparel Design Studio",
+    tagline: "AI Fashion Models, Virtual Try-On & Realistic Apparel Mockups",
+    downloads: "50+",
+    badge: "50+ Downloads",
+    playStore: "https://play.google.com/store/apps/details?id=com.merchmock.tshirt.design.studio&pcampaignid=web_share",
+    stack: ["Flutter", "Dart", "fal.ai (FLUX.1)", "Virtual Try-On (VTON)", "Gemini AI", "Google Play"],
+    description:
+      "Built and published a professional apparel mockup studio on Google Play Store with 50+ downloads. Features photorealistic AI fashion models, seamless virtual try-on technology that drapes custom garments on user photos, realistic fabric texture simulation, and 2000×2000 HD studio exports.",
+    highlights: [
+      "Published on Google Play Store with 50+ downloads & studio-grade production architecture",
+      "Photorealistic AI Fashion Models: Generates male & female models in studio, street, and cyberpunk vibes via FLUX.1 neural image synthesis",
+      "AI Virtual Try-On (VTON): Real-time neural try-on engine draping user-designed garments onto custom uploaded photos and selfies",
+      "Realistic Fabric Engine: Advanced shadow-map blending, natural fabric drape, folds, and dual-layer logo/text positioning with Google Fonts",
+      "Complete Merch Suite: 2000×2000 ultra-HD PNG exports, hex color matching, Gemini AI slogan generator, and AdMob integration",
     ],
   },
   {

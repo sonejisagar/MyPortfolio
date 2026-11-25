@@ -33,11 +33,10 @@ font_eyebrow = ImageFont.truetype(font_path_bold, 13)
 font_name = ImageFont.truetype(font_path_bold, 54)
 font_title = ImageFont.truetype(font_path_bold, 32)
 font_sub = ImageFont.truetype(font_path_regular, 18)
-font_card_title = ImageFont.truetype(font_path_bold, 15)
+font_card_title = ImageFont.truetype(font_path_bold, 14)
 font_card_desc = ImageFont.truetype(font_path_regular, 11)
-font_card_sub = ImageFont.truetype(font_path_semibold, 10)
+font_card_sub = ImageFont.truetype(font_path_semibold, 11)
 font_badge_play = ImageFont.truetype(font_path_bold, 10)
-font_badge_dl = ImageFont.truetype(font_path_bold, 10)
 font_pill = ImageFont.truetype(font_path_semibold, 13)
 font_footer = ImageFont.truetype(font_path_regular, 14)
 font_status = ImageFont.truetype(font_path_bold, 12)
@@ -85,7 +84,7 @@ if os.path.exists(photo_path):
     # Bright green pulse dot
     dot_x, dot_y = status_x + 16, status_y + 13
     draw.ellipse((dot_x, dot_y, dot_x + 10, dot_y + 10), fill=(52, 211, 153))
-    draw.text((status_x + 34, status_y + 9), "3 APPS ON GOOGLE PLAY (250+ DL)", fill=(240, 253, 244), font=font_status)
+    draw.text((status_x + 34, status_y + 9), "4 APPS ON GOOGLE PLAY (300+ DL)", fill=(240, 253, 244), font=font_status)
 
 # 3. Right Side Content
 text_x = 540
@@ -104,62 +103,75 @@ draw.text((text_x, 178), "Flutter & Android Developer", fill=(56, 189, 248), fon
 
 # Tagline
 draw.text((text_x, 226), "Building production mobile apps with Flutter, native Android,", fill=(226, 232, 240), font=font_sub)
-draw.text((text_x, 252), "offline-first architecture, and Gemini AI workflows.", fill=(148, 163, 184), font=font_sub)
+draw.text((text_x, 252), "Generative AI (FLUX & Try-On), and Gemini AI integration.", fill=(148, 163, 184), font=font_sub)
 
-# 3 Project Cards
-card_y = 296
-card_w = 194
-card_h = 132
-card_gap = 14
+# 4 Project Cards in 2x2 Grid
+card_w = 295
+card_h = 68
+gap_x = 14
+gap_y = 10
 
 cards_data = [
     {
         "title": "Doc2Contact",
-        "desc": "AI Doc to Contacts",
-        "sub": "Gemini OCR | 1-Tap Save",
-        "badge": "100+ Downloads",
+        "badge": "100+ DL",
+        "sub": "AI Document OCR & 1-Tap Save",
         "sub_color": (56, 189, 248),
+        "col": 0, "row": 0,
     },
     {
         "title": "LinkPulse",
-        "desc": "Smart Links & Bio Pages",
-        "sub": "Analytics | QR Studio",
-        "badge": "100+ Downloads",
+        "badge": "100+ DL",
+        "sub": "Smart Bio Links & Realtime Analytics",
         "sub_color": (192, 132, 252),
+        "col": 1, "row": 0,
     },
     {
         "title": "LTO Exam Coach",
-        "desc": "PH Driving Exam Review",
-        "sub": "Mock Tests | Road Signs",
-        "badge": "50+ Downloads",
+        "badge": "50+ DL",
+        "sub": "Driving Exam Prep & Road Signs",
         "sub_color": (251, 191, 36),
+        "col": 0, "row": 1,
+    },
+    {
+        "title": "MerchMock Studio",
+        "badge": "50+ DL",
+        "sub": "AI Fashion Models & Virtual Try-On",
+        "sub_color": (52, 211, 153),
+        "col": 1, "row": 1,
     },
 ]
 
-for i, card in enumerate(cards_data):
-    cx = text_x + i * (card_w + card_gap)
-    draw.rounded_rectangle((cx, card_y, cx + card_w, card_y + card_h), radius=14, fill=(30, 41, 59, 210), outline=(71, 85, 105, 210), width=1)
-    draw.text((cx + 12, card_y + 12), card["title"], fill=(255, 255, 255), font=font_card_title)
-    draw.text((cx + 12, card_y + 36), card["desc"], fill=(148, 163, 184), font=font_card_desc)
-    draw.text((cx + 12, card_y + 58), card["sub"], fill=card["sub_color"], font=font_card_sub)
+base_card_y = 292
+for card in cards_data:
+    cx = text_x + card["col"] * (card_w + gap_x)
+    cy = base_card_y + card["row"] * (card_h + gap_y)
     
-    # Play store / Downloads badge
-    badge_bg_x = cx + 12
-    badge_bg_y = card_y + 90
-    badge_w = card_w - 24
-    draw.rounded_rectangle((badge_bg_x, badge_bg_y, badge_bg_x + badge_w, badge_bg_y + 26), radius=7, fill=(15, 23, 42, 255), outline=(16, 185, 129, 220), width=1)
-    draw.polygon([(badge_bg_x + 8, badge_bg_y + 7), (badge_bg_x + 8, badge_bg_y + 19), (badge_bg_x + 16, badge_bg_y + 13)], fill=(52, 211, 153))
-    draw.text((badge_bg_x + 22, badge_bg_y + 6), f"Play | {card['badge']}", fill=(240, 253, 244), font=font_badge_play)
+    draw.rounded_rectangle((cx, cy, cx + card_w, cy + card_h), radius=12, fill=(30, 41, 59, 210), outline=(71, 85, 105, 210), width=1)
+    
+    # Title
+    draw.text((cx + 12, cy + 10), card["title"], fill=(255, 255, 255), font=font_card_title)
+    
+    # Badge (Top-Right of card)
+    badge_text = card["badge"]
+    bw = draw.textlength(badge_text, font=font_badge_play)
+    bx = cx + card_w - bw - 22
+    by = cy + 10
+    draw.rounded_rectangle((bx, by, bx + bw + 12, by + 18), radius=5, fill=(15, 23, 42, 255), outline=(16, 185, 129, 220), width=1)
+    draw.text((bx + 6, by + 2), badge_text, fill=(52, 211, 153), font=font_badge_play)
+    
+    # Subtitle / Feature highlight
+    draw.text((cx + 12, cy + 36), card["sub"], fill=card["sub_color"], font=font_card_sub)
 
 # 4. Tech Stack Badges
-skills_list = ["Flutter", "Dart", "Android (Java)", "Gemini AI", "Firebase", "Offline-First"]
+skills_list = ["Flutter", "Dart", "Android", "Gemini AI", "Virtual Try-On", "FLUX.1", "Firebase"]
 pill_x = text_x
-pill_y = 448
+pill_y = 452
 for s in skills_list:
     sw = draw.textlength(s, font=font_pill)
-    draw.rounded_rectangle((pill_x, pill_y, pill_x + sw + 20, pill_y + 28), radius=14, fill=(15, 23, 42, 230), outline=(71, 85, 105, 210), width=1)
-    draw.text((pill_x + 10, pill_y + 5), s, fill=(226, 232, 240), font=font_pill)
-    pill_x += int(sw) + 24
+    draw.rounded_rectangle((pill_x, pill_y, pill_x + sw + 18, pill_y + 26), radius=13, fill=(15, 23, 42, 230), outline=(71, 85, 105, 210), width=1)
+    draw.text((pill_x + 9, pill_y + 4), s, fill=(226, 232, 240), font=font_pill)
+    pill_x += int(sw) + 22
 
 # 5. Footer Links
 footer_y = 512
@@ -169,4 +181,4 @@ draw.text((text_x, footer_y), "github.com/sonejisagar    |    linkedin.com/in/sa
 bg_rgb = bg.convert('RGB')
 bg_rgb.save('public/og-image.png', format='PNG', quality=95)
 bg_rgb.save('public/og-image.jpg', format='JPEG', quality=95)
-print("Successfully generated refined public/og-image.png and public/og-image.jpg with 3 apps and 250+ downloads")
+print("Successfully generated refined public/og-image.png and public/og-image.jpg with 4 apps and 300+ downloads")
